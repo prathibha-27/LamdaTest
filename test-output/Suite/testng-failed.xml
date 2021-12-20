@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="TestOnChrome(failed)" parallel="tests">
+    <parameter name="BrowserName" value="chrome"/>
+    <parameter name="version" value="96.0"/>
+    <classes>
+      <class name="Test.LoginPageTest">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="QuitBrowser"/>
+          <include name="ValidatingLoginCredentials"/>
+        </methods>
+      </class> <!-- Test.LoginPageTest -->
+      <class name="Test.FormPageTest">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="QuitBrowser"/>
+          <include name="testing"/>
+        </methods>
+      </class> <!-- Test.FormPageTest -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+  <test thread-count="2" name="TestOnFirefox(failed)" parallel="tests">
+    <parameter name="BrowserName" value="firefox"/>
+    <parameter name="version" value="95.0"/>
+    <classes>
+      <class name="Test.LoginPageTest">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="QuitBrowser"/>
+          <include name="ValidatingLoginCredentials"/>
+        </methods>
+      </class> <!-- Test.LoginPageTest -->
+      <class name="Test.FormPageTest">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="QuitBrowser"/>
+          <include name="testing"/>
+        </methods>
+      </class> <!-- Test.FormPageTest -->
+    </classes>
+  </test> <!-- TestOnFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
