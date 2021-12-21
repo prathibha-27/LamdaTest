@@ -40,14 +40,14 @@ public class BaseTest{
 	
 	//launching browser
 	@BeforeMethod
-	@Parameters({"BrowserName", "version"})
-	public void LaunchBrowser(String BrowserName, String version) throws IOException {
+	//@Parameters({"BrowserName", "version"})
+	public void LaunchBrowser() throws IOException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("build", "Third build");
 		capabilities.setCapability("name", "test");
 		capabilities.setCapability("platform", "Windows 10");
-		capabilities.setCapability("browserName", BrowserName);
-		capabilities.setCapability("version",version);
+		capabilities.setCapability("browserName", "chrome");
+		capabilities.setCapability("version","96.0");
 		capabilities.setCapability("video",true);
 		capabilities.setCapability("console",true);
 		capabilities.setCapability("visual",true);
