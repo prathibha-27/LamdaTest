@@ -32,8 +32,8 @@ public class BaseTest{
 	
 	public static ChromeOptions options;
 	
-	public String username = "prathibhap027";
-    public String accessKey = "b5I5OzLs9SIrbGROK1u1TtOli287v3fTX8ja4HE41lMYpXsuYu";
+	public String username = "";
+    public String accessKey = "";
     public static RemoteWebDriver driver;
 
 
